@@ -1,7 +1,8 @@
 // Portfolio Data
 const portfolioData = {
     name: "Nihal Shetty",
-    title: "Software Engineer / Full Stack Developer",
+    title: "Software Engineer",
+    location: "Santa Clara, CA",
     email: "nihalshetty2001@gmail.com",
     linkedin: "https://linkedin.com/in/nihaldshetty/",
     github: "https://github.com/nihalshetty-boop",
@@ -92,14 +93,15 @@ const portfolioData = {
         }
     },
     
-    about: `I'm a passionate full-stack developer with hands-on experience building scalable web and mobile applications using technologies like React, Node.js, FastAPI, MongoDB, and Swift. I've contributed to impactful projects across startups and academic environments—ranging from full-stack learning platforms to native iOS games—focusing on performance, usability, and clean architecture. With a strong foundation in data structures, backend systems, and cloud deployment (AWS, GCP, Docker), I enjoy working across the stack to solve real-world problems and deliver polished user experiences. I've also explored areas like CI/CD, authentication, and real-time communication, and I'm always excited to learn and apply new technologies to build meaningful software. I recently graduated with an M.S. in Computer Science at Indiana University, and I'm actively seeking full-time software engineering roles where I can contribute to impactful products and grow as a developer.
-When I'm not coding, you can find me exploring new technologies or contributing to open source projects.`,
+    about: `I'm a software engineer at SeeMe, where I build artist workflows, Open Call event tools, monetization, and admin CMS features with Next.js, Postgres, Auth0, and Stripe. Recent work includes an artwork upload pipeline on IndexedDB, GCP Cloud Tasks, and Pinecone that cut user-facing upload latency by 90%, and an internal Gemini tool that generates artist profiles from historical collaborator forms.
+
+I previously led frontend engineering for Chomp, a React Native recipe app, and interned on full-stack web and mobile products. I have an M.S. in Computer Science from Indiana University (GPA 3.84) and a B.Tech. in Computer Science from NMIMS (GPA 3.59). I'm based in Santa Clara, CA.`,
     
     projects: [
         {
-            title: "Listri, an E-Commerce Platform",
-            description: "A full-stack e-commerce solution built with React, Node.js, and MongoDB. Features include user authentication, payment processing, and admin dashboard.",
-            tech: "React, Node.js, MongoDB, Stripe, Redux",
+            title: "Listri Marketplace",
+            description: "A marketplace platform built with Next.js and Postgres, using server-side rendering for listing discovery. Core workflows are split into microservices, containerized with Docker, and deployed on GCP Cloud Run.",
+            tech: "Next.js, Postgres, Docker, GCP Cloud Run",
             link: "https://github.com/nihalshetty-boop/listri"
         },
         {
@@ -109,9 +111,9 @@ When I'm not coding, you can find me exploring new technologies or contributing 
             link: "https://github.com/nihalshetty-boop/MyGlanceThing"
         },
         {
-            title: "2048-iOS",
-            description: "A-based services.",
-            tech: "JavaScript, OpenWeather API, Chart.js, Geolocation API",
+            title: "2048 iOS Application",
+            description: "A multi-screen Swift app built with UIKit, with dynamic grid layout, swipe gesture recognizers, and Core Data persistence so game state survives across sessions.",
+            tech: "Swift, UIKit, Core Data",
             link: "https://github.com/nihalshetty-boop/2048-iOS"
         },
         {
@@ -143,37 +145,57 @@ When I'm not coding, you can find me exploring new technologies or contributing 
     
     experience: [
         {
+            title: "Software Engineer",
+            company: "SeeMe, New York, NY",
+            date: "March 2026 – Present",
+            description: "Build end-to-end features with Next.js, Postgres, Auth0, and Stripe, from database schema and REST APIs through React UI and CI/CD, across artist workflows, Open Call event wizards, monetization, and admin CMS tooling. Rebuilt the artwork upload pipeline with IndexedDB, GCP Cloud Tasks, and Pinecone, cutting user-facing upload latency by 90%. Built an internal Gemini tool that turns historical collaborator forms in Drive into artist profiles, scaling the active artist base by 400%."
+        },
+        {
             title: "Senior Consultant",
-            company: "Heartland Community Network",
-            date: "June 2025 – Present",
-            description: "Partnered with small businesses and organizations across Indiana to identify operational challenges and deliver tailored software solutions through web and app development."
+            company: "Heartland Community Network, Bloomington, IN",
+            date: "June 2025 – March 2026",
+            description: "Led frontend engineering for Chomp, a React Native (Expo) recipe-sharing app, shipping 20+ features including a posts-first social feed, likes, reposts, nested comments, and AdMob from concept to alpha in 3 months. Set up a hybrid state layer with TanStack Query and Redux Toolkit so feed data-fetching no longer repeated the same API requests."
         },
         {
             title: "Full Stack Developer Intern",
-            company: "Hyphenova",
+            company: "Hyphenova, Los Angeles, CA",
             date: "August 2024 – December 2024",
-            description: "Led the development of key user-facing features including onboarding, profile, chat and creator pages using custom component libraries and structured form handling, improving input validation and overall UX consistency."
+            description: "Delivered 35+ responsive features with React Native, Node.js, Tailwind CSS, and custom component libraries, reducing form validation errors by 25%. Integrated FastAPI with MongoDB for account and session endpoints with JWT authentication."
         },
         {
             title: "Full Stack Engineer Intern",
-            company: "Y STEM & Chess Inc.",
+            company: "Y STEM & Chess Inc., Boise, ID",
             date: "May 2024 – August 2024",
-            description: "Assisted in migrating the company’s main platform from Angular to React, restructuring components and implementing routing via React Router to improve maintainability and frontend performance."
+            description: "Helped migrate the core platform from Angular to React, restructuring components and adding routing with React Router. Built responsive, API-backed interfaces with React, Bootstrap, and Axios, validated across 10+ pages."
         },
         {
-            title: "FOSSEE Intern",
-            company: "Indian Institute of Technology – Bombay",
-            date: "March 2022 - October 2022",
-            description: "Spearheaded a critical Moodle platform upgrade for the Spoken Tutorial initiative by analyzing over 2,000 relational database tables and optimizing 32 performance-critical ones, ensuring schema alignment and improved query efficiency."
+            title: "Software Engineer Intern",
+            company: "Indian Institute of Technology – Bombay, Mumbai, India",
+            date: "March 2022 – October 2022",
+            description: "Led a Moodle platform upgrade by analyzing 2,000+ relational tables and optimizing 32 of them, closing a maintenance problem that had lasted 7 years. Built Python AST and diff-parsing scripts to recover undocumented PHP and SQL changes across 4,000+ lines, then completed a MariaDB to MySQL migration with no post-update bugs."
+        }
+    ],
+
+    education: [
+        {
+            school: "Indiana University",
+            degree: "Master of Science, Computer Science",
+            date: "August 2023 – May 2025",
+            detail: "GPA 3.84"
+        },
+        {
+            school: "NMIMS’ Mukesh Patel School of Technology Management and Engineering",
+            degree: "Bachelor of Technology, Computer Science",
+            date: "July 2019 – May 2023",
+            detail: "GPA 3.59"
         }
     ],
     
     skills: {
-        "Programming Languages": ["Python", "Java", "C", "C++", "JavaScript", "TypeScript", "SQL", "Kotlin", "Swift", "PHP", "R", "MATLAB"],
-        "Web & App Development": ["React", "Angular", "Next.js",  "Node.js", "Express", "Android Studio", "Xcode", "HTML", "CSS", "Flask", "Django", "Bootstrap", "MERN & MEAN Stack", "Streamlit", "Redux", "REST API", "Spring Boot", "Electron", "Vite", "GraphQL"],
-        "Databases/Datastores": ["SQL", "MongoDB", "PostgreSQL", "Firebase", "RDBMS", "MySQL", "Redis"],
-        "Cloud & DevOps": ["AWS", "GCP", "CI/CD", "Docker", "Kubernetes", "K8s", "GitHub Actions"],
-        "Miscellaneous": ["Data Structures", "Algorithms", "Linux", "Microsoft Azure", "Agile", "Git", "Jira", "Postman", "VS Code", "Version Control", "Operating Systems", "Computer Networks", "TCP/IP"]
+        "Programming Languages": ["Python", "Java", "C", "C++", "JavaScript", "TypeScript", "SQL", "Kotlin", "Swift", "Go", "PHP", "R", "MATLAB"],
+        "Web & App Development": ["React", "Angular", "Next.js", "Node.js", "Express", "Expo", "Android Studio", "Xcode", "HTML", "CSS", "Tailwind", "REST API", "Auth0", "Google Cloud Tasks", "GCS", "GTM", "Stripe"],
+        "Databases": ["SQL", "MongoDB", "Postgres", "Pinecone", "Firebase", "MariaDB", "MySQL", "NoSQL", "DynamoDB"],
+        "Tools, Skills & Concepts": ["Cursor", "Claude", "Google Gemini / Vertex AI", "Data Structures", "User Interface", "Algorithms", "Machine Learning", "Linux", "Git", "Jira", "Postman", "Version Control", "Operating Systems", "macOS", "Windows", "Android", "iOS", "Multimodal AI"]
     },
     
     publications: [
@@ -196,7 +218,7 @@ const asciiArt = `
   ██║ ╚████║██║██║  ██║██║  ██║███████╗ 
   ╚═╝  ╚═══╝╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝ 
                                       
-Software Engineer / Full Stack Developer
+Software Engineer
 `;
 
 const mobileAsciiArt = `
@@ -207,7 +229,7 @@ const mobileAsciiArt = `
  ██║ ╚████║██║██║  ██║██║  ██║███████╗ 
  ╚═╝  ╚═══╝╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝ 
                                       
-Software Engineer / Full Stack Developer
+Software Engineer
 `;
 
 // SVG icons
@@ -252,73 +274,45 @@ class Terminal {
                         size: '15.2MB',
                         modified: '2024-01-15',
                         description: 'Collection of my software development projects',
-                        content: `# My Projects Portfolio
+                        content: `# My Projects
 
-Here's a comprehensive overview of my software development projects:
+## Listri Marketplace
+Marketplace built with Next.js and Postgres, using server-side rendering for listing discovery. Core workflows run as Dockerized microservices on GCP Cloud Run.
 
-## 🌐 Web Applications
-- **Portfolio Website** - Terminal-style interactive portfolio (this site!)
-- **E-commerce Platform** - Full-stack shopping application with payment processing
-- **Learning Management System** - Course management and student interaction platform
+## 2048 iOS Application
+Multi-screen Swift app with UIKit, dynamic grid layout, swipe gestures, and Core Data persistence.
 
-## 📱 Mobile Applications  
-- **Fitness Tracker** - Cross-platform health and fitness monitoring app
-- **2048 Game** - iOS implementation of the popular puzzle game
-- **Task Manager** - Productivity app with sync capabilities
+## Conversational AI College Enquiry Chatbot
+Chatbot built with Python, SQL, and Microsoft Azure to replace a university rule-based enquiry bot.
+https://doi.org/10.22214/ijraset.2023.51324
 
-## 🤖 AI/ML Projects
-- **Customer Service Chatbot** - AI-powered support system
-- **Image Classification** - Computer vision project for object recognition
-- **Sentiment Analysis** - Natural language processing for social media
-
-## 🛠️ Tools & Utilities
-- **Syntax Analyzer** - C language parser and error checker
-- **Sorting Visualizer** - Interactive algorithm demonstration tool
-- **File Manager** - Cross-platform file organization utility
-
-Each project demonstrates different aspects of software development including frontend design, backend architecture, database management, and user experience optimization.`
+## Other work
+- MyGlanceThing — glanceable dashboard for the Spotify Car Thing
+- CourseCraft — learning management system
+- This portfolio — terminal-style site
+- Syntax analyser for C
+- Sorting algorithms visualizer`
                     },
                     'projects-dir': {
                         type: 'directory',
                         children: {
-                            'web-apps': {
-                                type: 'directory',
-                                children: {
-                                    'portfolio': {
-                                        type: 'file',
-                                        size: '2.3MB',
-                                        modified: '2024-01-15',
-                                        description: 'Terminal-style portfolio website'
-                                    },
-                                    'e-commerce': {
-                                        type: 'file',
-                                        size: '5.7MB',
-                                        modified: '2023-12-20',
-                                        description: 'Full-stack e-commerce platform'
-                                    }
-                                }
+                            'listri': {
+                                type: 'file',
+                                size: '5.7MB',
+                                modified: '2025-08-01',
+                                description: 'Next.js and Postgres marketplace on GCP Cloud Run'
                             },
-                            'mobile-apps': {
-                                type: 'directory',
-                                children: {
-                                    'fitness-tracker': {
-                                        type: 'file',
-                                        size: '8.1MB',
-                                        modified: '2024-01-10',
-                                        description: 'Cross-platform fitness tracking app'
-                                    }
-                                }
+                            '2048-ios': {
+                                type: 'file',
+                                size: '3.4MB',
+                                modified: '2024-06-01',
+                                description: 'Swift UIKit game with Core Data persistence'
                             },
-                            'ai-ml': {
-                                type: 'directory',
-                                children: {
-                                    'chatbot': {
-                                        type: 'file',
-                                        size: '3.2MB',
-                                        modified: '2023-11-30',
-                                        description: 'AI-powered customer service chatbot'
-                                    }
-                                }
+                            'college-enquiry-chatbot': {
+                                type: 'file',
+                                size: '2.1MB',
+                                modified: '2023-05-01',
+                                description: 'Conversational AI chatbot published with IJRASET'
                             }
                         }
                     },
@@ -329,60 +323,74 @@ Each project demonstrates different aspects of software development including fr
                         description: 'My professional work experience and career journey',
                         content: `# Professional Experience
 
-## 🏢 Current Position
-**Senior Consultant** at Heartland Community Network
-*June 2025 – Present*
-- Partner with small businesses across Indiana to identify operational challenges
-- Deliver tailored software solutions through web and app development
-- Lead technical consulting projects from conception to deployment
+## Software Engineer — SeeMe, New York, NY
+*March 2026 – Present*
+- Next.js, Postgres, Auth0, and Stripe features from schema and APIs through React UI and CI/CD
+- Artwork upload pipeline (IndexedDB, GCP Cloud Tasks, Pinecone) cut upload latency by 90%
+- Gemini tool that builds artist profiles from Drive forms, growing the active artist base by 400%
 
-## 💼 Previous Roles
+## Senior Consultant — Heartland Community Network, Bloomington, IN
+*June 2025 – March 2026*
+- Led frontend for Chomp, a React Native (Expo) recipe app, through alpha in 3 months
+- Social feed, engagement UI, and AdMob; TanStack Query and Redux Toolkit for feed state
 
-### Full Stack Developer Intern - Hyphenova
+## Full Stack Developer Intern — Hyphenova, Los Angeles, CA
 *August 2024 – December 2024*
-- Led development of key user-facing features including onboarding and profile systems
-- Implemented custom component libraries and structured form handling
-- Improved input validation and overall UX consistency across the platform
+- 35+ React Native and Node.js features; form validation errors down 25%
+- FastAPI and MongoDB endpoints for JWT auth and persistent sessions
 
-### Full Stack Engineer Intern - Y STEM & Chess Inc.
+## Full Stack Engineer Intern — Y STEM & Chess Inc., Boise, ID
 *May 2024 – August 2024*
-- Assisted in migrating main platform from Angular to React
-- Restructured components and implemented routing via React Router
-- Improved maintainability and frontend performance significantly
+- Angular to React migration with React Router
+- React, Bootstrap, and Axios interfaces validated across 10+ pages
 
-### FOSSEE Intern - Indian Institute of Technology, Bombay
-*March 2022 - October 2022*
-- Spearheaded critical Moodle platform upgrade for Spoken Tutorial initiative
-- Analyzed over 2,000 relational database tables
-- Optimized 32 performance-critical tables for improved query efficiency
+## Software Engineer Intern — IIT Bombay, Mumbai, India
+*March 2022 – October 2022*
+- Moodle upgrade: analyzed 2,000+ tables and optimized 32
+- Python migration scripts across 4,000+ lines of PHP and SQL; MariaDB to MySQL
 
-## 🎓 Education
-**M.S. in Computer Science** - Indiana University
-*Graduated 2024*
+## Education
+**M.S. Computer Science** — Indiana University (GPA 3.84)
+*August 2023 – May 2025*
 
-## 🚀 Key Achievements
-- Successfully migrated legacy systems to modern frameworks
-- Improved platform performance by 40% through database optimization
-- Led cross-functional teams in agile development environments
-- Delivered 15+ software solutions for small businesses`
+**B.Tech. Computer Science** — NMIMS (GPA 3.59)
+*July 2019 – May 2023*`
                     },
                     'experience-dir': {
                         type: 'directory',
                         children: {
-                            'software-engineer': {
+                            'seeme': {
                                 type: 'file',
                                 size: '1.8MB',
-                                modified: '2024-01-01',
-                                description: 'Current role at Tech Company'
+                                modified: '2026-03-01',
+                                description: 'Software Engineer at SeeMe'
+                            },
+                            'heartland': {
+                                type: 'file',
+                                size: '1.4MB',
+                                modified: '2026-03-01',
+                                description: 'Senior Consultant at Heartland Community Network'
                             },
                             'internships': {
                                 type: 'directory',
                                 children: {
-                                    'startup-intern': {
+                                    'hyphenova': {
                                         type: 'file',
                                         size: '1.2MB',
-                                        modified: '2023-06-15',
-                                        description: 'Summer internship at Startup Inc'
+                                        modified: '2024-12-01',
+                                        description: 'Full Stack Developer Intern at Hyphenova'
+                                    },
+                                    'ystem': {
+                                        type: 'file',
+                                        size: '1.1MB',
+                                        modified: '2024-08-01',
+                                        description: 'Full Stack Engineer Intern at Y STEM & Chess'
+                                    },
+                                    'iit-bombay': {
+                                        type: 'file',
+                                        size: '1.3MB',
+                                        modified: '2022-10-01',
+                                        description: 'Software Engineer Intern at IIT Bombay'
                                     }
                                 }
                             }
