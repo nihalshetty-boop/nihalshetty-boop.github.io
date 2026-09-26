@@ -2,7 +2,7 @@
 
 A modern, interactive terminal-style portfolio website that mimics a real terminal interface.
 
-**Live at:** [nihalshetty-boop.github.io/nihalshetty.me](https://nihalshetty-boop.github.io/nihalshetty.me/)
+**Live at:** [nihalshetty-boop.github.io](https://nihalshetty-boop.github.io/)
 
 ---
 
@@ -24,12 +24,12 @@ A modern, interactive terminal-style portfolio website that mimics a real termin
 ---
 
 ## Hosting & Infrastructure
-- **URL:** [nihalshetty-boop.github.io/nihalshetty.me](https://nihalshetty-boop.github.io/nihalshetty.me/)
+- **URL:** [nihalshetty-boop.github.io](https://nihalshetty-boop.github.io/)
 - **Hosting:** GitHub Pages (static site hosting)
 - **SSL:** GitHub Pages (managed certificate)
 - **CDN:** GitHub Pages global CDN
 
-[![Deploy to GitHub Pages](https://img.shields.io/github/deployments/nihalshetty-boop/nihalshetty.me/github-pages)](https://github.com/nihalshetty-boop/nihalshetty.me/actions)
+[![Deploy to GitHub Pages](https://img.shields.io/github/deployments/nihalshetty-boop/nihalshetty-boop.github.io/github-pages)](https://github.com/nihalshetty-boop/nihalshetty-boop.github.io/actions)
 
 ---
 

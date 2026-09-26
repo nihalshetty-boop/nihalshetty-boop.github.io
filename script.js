@@ -124,7 +124,7 @@ When I'm not coding, you can find me exploring new technologies or contributing 
             title: "Portfolio Website",
             description: "This very terminal-style portfolio website you're currently viewing! Built with vanilla JavaScript and CSS.",
             tech: "HTML, CSS, JavaScript",
-            link: "https://github.com/nihalshetty-boop/nihalshetty.me"
+            link: "https://github.com/nihalshetty-boop/nihalshetty-boop.github.io"
         },
         {
             title: "Syntax Analyser for C",
